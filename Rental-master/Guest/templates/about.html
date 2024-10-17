@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<style>
+    .w3-about-container {
+        margin-top:1%; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        margin-bottom: 1%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .w3-about-container {
+            margin: 0!important;
+            padding: 0!important;
+        }
+    }
+
+    .about-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 160%;
+    }
+
+    .row {
+        margin-top: 3em!important;
+        margin-bottom: 3em!important;
+    }
+</style>
+{% endblock %}
+
+{% block body %} 
+<div class="jumbotron text-center">
+    <h1>About Us</h1>
+    <p>Some text about who we are and what we do.</p>
+</div>
+<h2 class="w3-center">Our Services</h2>
+<div class="row w3-about-container" style="text-align: center;">
+    <p>Our work is to provide rentals services and accommodations to students who are new to the country or city and need a place to stay. We also contact owners and people in the area who are searching for roommates or paying guests.</p>
+    <p>You can choose rooms from verified users and rooms. Our aim is to provide a safe and comfortable home with rental services that is cheaper option for nomad-lifestyle students. Register as an owner or roommate and find a person you want to share the room with.</p>
+</div>
+
+{% endblock %}
